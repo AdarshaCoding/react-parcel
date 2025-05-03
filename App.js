@@ -1,15 +1,11 @@
-function createHeading1() {
-  try {
-    const heading = React.createElement(
-      { id: "123", className: "h1" },
-      "Hello World from React!"
-    );
-    console.log(heading);
-  } catch (err) {
-    console.log("ERROR: ", err);
-  }
-}
-createHeading1();
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading = React.createElement(
+  "h1",
+  { id: "123", className: "h1" },
+  "Hello World from React!"
+);
 
 const parent = React.createElement(
   "div",
@@ -18,7 +14,7 @@ const parent = React.createElement(
     React.createElement(
       "h1",
       { className: "heading_1", key: 1 },
-      "I'm h1 tag!"
+      "Checking react-parcel bundler"
     ),
     React.createElement(
       "h2",

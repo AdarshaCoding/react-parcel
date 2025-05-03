@@ -1,0 +1,25 @@
+{
+  "name": "react-parcel",
+  "version": "1.0.0",
+  "description": "react with parcel bundler",
+  "scripts": {
+    "start":"npx parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "parcel"
+  ],
+  "author": "Adi_0_Coder",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "broserslist":[
+    "last 2 versions"
+  ]
+}
