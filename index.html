@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Testing</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      const heading = React.createElement(
+        "h1",
+        { id: "123", className: "h1" },
+        "Hello World from React!"
+      );
+      console.log(heading);
+      const divTag = React.createElement("div", {}, [
+        React.createElement("h1", { id: "child1", key: 1 }, "h1 chaild tag"),
+        React.createElement("h1", { id: "child2", key: 2 }, "h2 chaild tag"),
+      ]);
+      console.log(divTag);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(divTag);
+    </script>
+  </body>
+</html>
