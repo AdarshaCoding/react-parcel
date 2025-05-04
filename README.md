@@ -13,10 +13,12 @@
 
 - NPM: Package Manager for Node
 - Biggest package manager, all the libraries/utilities are hosted
-- //-------------------
-  node -v
-  npm -v
-- //-------------------
+
+```js
+/**
+ * node -v;
+ * npm -v;
+```
 
 - Initialize the npm to your project: npm init --> it creates a package.json
 - configuration file for npm & maintaince the version of the all the dependencies/packages
@@ -79,6 +81,4 @@ dist\react-parcel.c4b838d5.css         76 B    320ms
 dist\react-parcel.6fdd5fcb.js     185.31 kB    753ms
 ```
 
-```js
-![dev_prod_build](./image.png);
-```
+<img src="./image.png" alt="Development and Production Build" width="400"/>
